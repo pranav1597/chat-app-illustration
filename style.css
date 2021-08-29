@@ -1,0 +1,303 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(270, 20%, 96%);
+}
+
+.background-pattern{
+    width: 190px;
+    height: 550px;
+    z-index: -1;
+    background: linear-gradient(to bottom,hsl(293, 100%, 63%),hsl(264, 100%, 61%),hsl(264, 100%, 61%), hsl(264, 100%, 61%));
+    position: absolute;
+    /* border: 2px solid red; */
+    margin-top: -20px;
+    border-radius: 0 0 100em 0;
+
+}
+
+.container{
+    border: 2px solid transparent;
+}
+
+.mobile-section{
+    width: 275px;
+    min-height: 95vh;
+    border: 10px solid white;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 20px;
+    background-color: hsl(270, 20%, 96%);
+    box-shadow: 10px 16px 16px 5px rgb(218, 218, 218);
+    position: relative;
+}
+
+.top-notch{
+    width: 150px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.profile-section{
+    background: linear-gradient(to left,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-radius: 13px;
+    font-size: 11px;
+    padding: 1.1em 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+    color: white;
+    padding-top: 2.3em
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    /* border: 2px solid red; */
+}
+.avatar{
+    background-image: url(images/avatar.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 5px;
+}
+
+.profile-status{
+    font-size: 8px;
+    color:hsl(276, 100%, 81%);
+    margin-top: 4px;
+}
+
+.chat-section{
+    font-size: 11px;
+    padding: 0 5px;
+}
+
+.chat-one{
+    background-color: hsl(276, 100%, 92%);
+    color: hsl(276, 55%, 52%);
+    width: 65%;
+    margin-top: 15px;
+    padding: 7px;
+    border-radius: 10px 10px 10px 0;
+    /* padding-right: 10px; */
+    float: left;
+    margin-left: 5px;
+    line-height: 1.5em;
+}
+
+.pictures{
+    margin-top: 15px;
+    padding: 5px 0;
+    /* border: 2px solid red; */
+    width: 65%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.dogs{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.dog1{
+    background-image: url(images/dog-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dog2{
+    background-image: url(images/dog-image-2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dog3{
+    background-image: url(images/dog-image-3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.chat-two{
+    float: right;
+    margin-right: 5px;
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+    width: 65%;
+    margin-top: 15px;
+    padding: 7px;
+    border-radius: 10px 10px 0 10px;
+    line-height: 1.5em;
+    box-shadow: 0px 3px 6px 2px rgb(218, 218, 218);
+}
+
+.chat-two--2{
+    width: 40%;
+}
+
+.walk{
+    float: left;
+    width: 75%;
+    background: linear-gradient(to right,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-radius: 10px 10px 10px 0;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.walk + .walk{
+    margin-bottom: 10px;
+}
+
+.round{
+    width: 15px;
+    height: 15px;
+    border: 1px solid hsl(289, 100%, 72%);
+    border-radius: 50%;
+}
+
+.how-long{
+    color: hsl(289, 100%, 79%);
+    margin-right: 25px;
+    font-size: 10px;
+}
+
+.money{
+    color: white;
+    font-size: 14px;
+}
+
+.type-section{
+    width: 95%;
+    display: block;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .3em;
+    /* border: 2px solid red; */
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.input{
+    font-size: 11px;
+    color: hsl(206, 6%, 79%);
+    margin-left: 5px;
+}
+
+.send{
+    background-color: hsl(271, 36%, 24%);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.fa-chevron-right{
+    color: white;
+    font-size: 10px;
+    
+}
+
+.booking-info{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.booking-title{
+    font-size: 35px;
+    font-weight: 500;
+    color: hsl(271, 36%, 24%);
+}
+
+.booking-detail{
+    font-size: 13px;
+    color: hsl(270, 7%, 64%);
+    /* border: 2px solid green; */
+    width: 80%;
+    margin: auto;
+    line-height: 1.5em;
+    margin-top: 20px;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* ---- for desktop version---- */
+
+@media (min-width:1000px){
+
+    .background-pattern{
+        width: 500px;
+        height: 650px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        margin-left: -185px;
+        background: linear-gradient(to bottom,hsl(293, 100%, 63%),hsl(264, 100%, 61%), hsl(264, 100%, 61%));
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid red; */
+        padding: 0 5em;
+    }
+
+    .mobile-section{
+        width: 25%;
+    
+    }
+
+    .booking-info{
+        /* border: 2px solid red; */
+        width: 35%;
+        margin: auto;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .booking-detail{
+        width: 100%;
+    }
+}
